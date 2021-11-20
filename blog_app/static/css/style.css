@@ -1,0 +1,27 @@
+/* palette: #f3f6f8 (almost white), 
+#44bba4 (teal blue), 
+#393e41 (cool grey),
+#d3d0cb (timberwolf),
+#fc4622 (chinese orange) */
+
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: 'Poppins', sans-serif;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+.navbar, .nav-items {
+    background-color: #f3f6f8;
+    display: flex;
+    justify-content: flex-end;
+    color:#44BBA4;
+    text-decoration: none;
+    padding: 1em;
+}

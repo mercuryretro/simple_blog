@@ -6,15 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Better Blog - Main</title>
+    {% load static %}
+    <link rel='stylesheet' href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/296fe13e1b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Better Blog</h1>
-    <nav>
-        <a>About</a>
-        <a>Register</a>
-        <a>Login</a>
+    <nav class='navbar'>
+        <a class='nav-items' href='#home'>Home</a>
+        <a class='nav-items' href='#register'>Register</a>
+        <a class='nav-items' href='#login'>Login</a>
+        <span class="fas fa-bars nav-items"></span>
     </nav>
+    <div class='main-content'>
+        <h1 class='main-heading'>Better Blog</h1>
+    </div>
 </body>
 
 </html>
