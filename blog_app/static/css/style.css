@@ -1,8 +1,9 @@
 /* palette: #f3f6f8 (almost white), 
-#44bba4 (teal blue), 
-#393e41 (cool grey),
-#d3d0cb (timberwolf),
-#fc4622 (chinese orange) */
+#352D39 (black coffee)
+#A1AEBB (cadet blue)
+#F4ECE2 (linen)
+#9A8FA9 (glossy grape)
+#C2781E (ochre) */
 
 
 * {
@@ -14,33 +15,49 @@
 	margin: 0;
 }
 
-
+body {
+    background-image: url(/static/imgs/joanna-kosinska-RE-8WswW95o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 1000px;
+}
 
 /* Navbar styling */
 .navbar{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    color:#44BBA4;
+    justify-content: flex-start;
     text-decoration: none;
-    padding: 1em;
+    padding: .75em;
     gap: 1em;
-    box-shadow: 0 10px 6px -6px rgb(189, 188, 188);
+    box-shadow: 0 10px 6px -6px rgb(158, 158, 158);
 }
 #nav-1{
-    background-color:#f3f6f8;
+    /* background-color:#f3f6f8; */
+    background: rgb(226, 235, 244);
+    background: linear-gradient(90deg, rgba(145,143,169,0.95) 65%,rgba(226,235,244,1) 100%);
+    z-index: auto;
 }
 .nav-items{
     transition: 0.5s ease;
     text-decoration: none;
-    color:#44BBA4;
-    border-bottom: 1px solid #f3f6f8;
-    border-top: 1px solid #f3f6f8;
+    color:#352d39;
+    border-bottom: 1px solid rgba(145,143,169,0.95);
+    border-top: 1px solid rgba(145,143,169,0.95);
     padding: .5em 0;
     margin: 0 .5em;
 }
 .nav-items:hover, .nav-items:focus{
-    border-top: 1px solid #44BBA4;
-    border-bottom: 1px solid #44BBA4;
+    border-top: 1px solid #352d39;
+    border-bottom: 1px solid #352d39;
     padding: .35em 0;
 }
+
+/* Main Content styling */
+/* .main-content {
+    background-image: url(/static/imgs/joanna-kosinska-RE-8WswW95o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 1000px;
+} */
