@@ -24,13 +24,23 @@ body {
 }
 
 /* Navbar styling */
+#logo {
+    height: 3.5em;
+    align-self: center;
+}
+.left {
+    margin-left: auto;
+}
+
 .navbar{
     display: flex;
     justify-content: flex-start;
     text-decoration: none;
+    align-items:center;
     padding: .75em;
     gap: 1em;
     box-shadow: 0 10px 6px -6px rgb(158, 158, 158);
+    max-height: 70px;
 }
 #nav-1{
     /* background-color:#f3f6f8; */
