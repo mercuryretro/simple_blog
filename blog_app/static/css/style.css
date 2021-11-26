@@ -63,6 +63,10 @@ body {
 }
 
 /* Main Content styling */
+.main-container{
+    display: flex;
+    justify-content:space-around;
+}
 .main-content{
     color:#352d39;
     background-color: rgba(226,235,244,0.80);
@@ -84,4 +88,16 @@ body {
 }
 .main-paragraph {
     margin-top: 0.75em;
+}
+canvas {
+    width:500px;
+    height:500px;
+    background-color:aliceblue;
+    margin-top:180px;
+}
+.canvas-question{
+    display:inline;
+    float: right;
+    margin-right: 3.5em;
+    color:#352d39;
 }
