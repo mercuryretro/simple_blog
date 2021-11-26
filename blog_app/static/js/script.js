@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const journal = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
     let coord = { x: 200, y: 200 };
 
