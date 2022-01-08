@@ -3,5 +3,7 @@ from . import views
 
 urlpatterns = [
     path("", views.landing),  # localhost:8000
-    path("registration_form", views.registration),  # localhost:8000/registration_form
+    path(
+        "registration_form", views.registration_form
+    ),  # localhost:8000/registration_form
 ]

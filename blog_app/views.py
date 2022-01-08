@@ -8,5 +8,5 @@ def landing(request):
     return render(request, "landing.html")
 
 
-def registration(request):
-    return render(request, "registration.html")
+def registration_form(request):
+    return render(request, "registration_form.html")

@@ -1,0 +1,23 @@
+/* palette: #f3f6f8 (almost white), 
+#352D39 (black coffee)
+#A1AEBB (cadet blue)
+#F4ECE2 (linen)
+#9A8FA9 (glossy grape)
+#C2781E (ochre) */
+
+* {
+	vertical-align: baseline;
+	font-family: 'Poppins', sans-serif;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    background-image: url(/static/imgs/joanna-kosinska-RE-8WswW95o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 925px;
+}
