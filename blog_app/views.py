@@ -4,5 +4,5 @@ from django.shortcuts import render, redirect
 # Create your views here.
 
 
-def main(request):
-    return render(request, 'main.html')
+def landing(request):
+    return render(request, "landing.html")
