@@ -9,7 +9,31 @@
 </head>
 
 <body>
+    <div class="registration_form">
+        <h1>Registration</h1>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <form action="/register" method="POST">
+            {% csrf_token %}
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+            <label for="password">Password</label>
+            <input type="password" name="password">
+            <label for="confirmed_password">Confirm Password</label>
+            <input type="password" name="confirmed_password">
+            <input type="submit" value="Register">
 
+        </form>
+    </div>
 </body>
 
 </html>
