@@ -15,8 +15,9 @@
 </head>
 
 <body>
-    <div class="registration_form">
-        <h1>Create a BetterBlog Account</h1>
+
+    <div class="registration-form">
+        <h1 class="registration-title">Create a BetterBlog Account</h1>
         {% if messages %}
         <ul class="messages">
             {% for message in messages %}
@@ -38,7 +39,7 @@
             <input type="password" name="password">
             <label for="confirmed_password">Confirm Password</label>
             <input type="password" name="confirmed_password">
-            <input type="submit" value="Register">
+            <input type="submit" class="btn-standard" value="Register">
 
         </form>
     </div>

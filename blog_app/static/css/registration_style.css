@@ -15,9 +15,43 @@
 }
 
 body {
-    background-image: url(/static/imgs/joanna-kosinska-RE-8WswW95o-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
+    background-color: #9A8FA9;
     height: 925px;
+}
+.registration-title {
+	font-size: large;
+	margin-bottom: 1em;
+}
+.registration-form {
+	background-color: rgba(226,235,244,0.80);
+	width: 400px;
+	border-radius: 1.5%;
+	padding: 1em;
+	color: #352d39;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	font-weight: bold;
+}
+.btn-standard{
+    text-decoration: none;
+    color: #f0ebe5;
+    background-color: #9e8cb6;
+    padding: .4em;
+    border-radius: 10px;
+    margin-top: 1em;
+	display: block;
+}
+label {
+	display: block;
+	left: 50%;
+}
+input {
+	padding: .25em;
+	width: 250px;
+	margin: .2em;
 }
