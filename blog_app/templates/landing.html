@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Better Blog - Main</title>
     {% load static %}
-    <link rel='stylesheet' href="{% static 'css/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,400&display=swap"
@@ -16,26 +15,32 @@
 </head>
 
 <body>
-    <nav class='navbar' id='nav-1'>
-        <a class='nav-items' href='#home'>Home</a>
-        <a class='nav-items' href='registration_form'>Register</a>
-        <a class='nav-items' href='#login'>Login</a>
-        <a class='right-nav' href='#home'><img src="/static/imgs/logov2.png" id="logo"></a>
-    </nav>
-    <div class='main-container'>
-        <main class='main-content'>
-            <h1 class='main-heading'>Better Blog</h1>
-            <h2 class='main-subheading'>A social blog for the soul</h2>
-            <p class='main-paragraph'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores repellendus
-                aperiam necessitatibus
-                illo perferendis, labore suscipit ratione, assumenda porro dignissimos expedita tempore quaerat neque
-                reiciendis nemo voluptatum. Maxime, odit numquam? Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Omn</p>
-            <a href='registration_form' class='btn-standard'>Start blogging</a>
-        </main>
+    <header>
+        <nav class='navbar' id='nav-1'>
+            <ul>
+                <li><a href='#home'>Home</a></li>
+                <li><a href='registration_form'>Register</a></li>
+                <li><a href='#login'>Login</a></li>
+            </ul>
+            <a href='#home'><img src="/static/imgs/logov2.png" id="logo"></a>
+        </nav>
+    </header>
+
+    <section class='main-content'>
+        <h1>Better Blog</h1>
+        <h2>A social blog for the soul</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores repellendus
+            aperiam necessitatibus
+            illo perferendis, labore suscipit ratione, assumenda porro dignissimos expedita tempore quaerat neque
+            reiciendis nemo voluptatum. Maxime, odit numquam?</p>
+        <a href='registration_form'>Start blogging</a>
+    </section>
+
+    <section>
         <canvas id='canvas'></canvas>
-    </div>
-    <h3 class='canvas-question'>What's on your mind?</h3>
+        <h3>What's on your mind?</h3>
+    </section>
+
     <script src="{% static '/js/script.js' %}"></script>
 </body>
 
